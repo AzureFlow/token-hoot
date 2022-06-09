@@ -29,7 +29,7 @@ OWL_ACCOUNTS=000000000,100000000
 
 Build:
 ```bash
-docker build -t tinyluma/owl-tkn .
+docker build -t azureflow/owl-tkn .
 ```
 
 Run:
