@@ -1,0 +1,14 @@
+# PHP
+/vendor
+composer.phar
+
+# Logs
+/data
+owl.log
+
+# IDE
+/.idea
+/.vscode
+
+# Docker
+.env

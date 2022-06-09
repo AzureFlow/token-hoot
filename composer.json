@@ -1,0 +1,23 @@
+{
+	"name": "azureflow/owl-tokens",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Kevin",
+			"email": "AzureFlow@protonmail.com"
+		}
+	],
+	"require": {
+		"php": "^8.0.2",
+		"ext-dom": "*",
+		"ext-curl": "*",
+		"guzzlehttp/guzzle": "^7.4",
+		"phpfastcache/phpfastcache": "^9.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"AzureFlow\\OwlTokens\\": "src/"
+		}
+	}
+}
