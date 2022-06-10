@@ -14,6 +14,12 @@ An automated tool for collecting [OWL](https://overwatchleague.com/en-us/) token
 
 ### Running with Cron
 
+Install the dependencies:
+```bash
+composer install
+```
+
+Edit your crontab:
 ```bash
 crontab -e
 # Add the following: */1 * * * * php /app/owl-tkn.php >> /var/log/cron.log
