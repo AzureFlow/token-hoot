@@ -5,12 +5,7 @@ An automated tool for collecting [OWL](https://overwatchleague.com/en-us/) token
 ### Get your User ID
 
 - Login to [OverwatchLeague.com](https://overwatchleague.com/en-us/)
-- Extract your account token from the `account_token` cookie.
-  - Easy method - open the Chrome DevTools and run the following: 
-    ```javascript
-    JSON.parse(atob(Object.fromEntries(document.cookie.split('; ').map(v=>v.split(/=(.*)/s).map(decodeURIComponent)))['account_token'].split('.')[1]))['id']
-    ```
-  - Manual method: decode the `account_token` JWT cookie and select the `id` field.
+- Go to [`https://account.battle.net/api/user`](https://account.battle.net/api/user) and copy the value of `accountId`.
 
 ### Running with Cron
 
@@ -47,7 +42,7 @@ docker-compose up --build -d
 Logs:
 
 ```bash
-watch docker logs owl_tkn
+docker logs owl_tkn -f
 ```
 
 Testing:
